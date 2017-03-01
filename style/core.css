@@ -1,0 +1,32 @@
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.innerwrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.wrapper > .innerwrapper > .global > div {
+    display: flex;
+}
+.navwrap a{
+    display: block;
+    padding: 10px; 
+}
+.navwrap a:hover{
+    background-color: #eee;
+}
+.navwrap li{
+    list-style: none;
+}
+.navwrap {
+    justify-content: space-around;
+}
+.mainwrap ol li{
+}
+li {
+    padding: 5px;
+}
+span {
+    text-decoration: line-through;
+}

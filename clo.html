@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <!--<link rel=stylesheet href="style/reset.css">-->
+        <link rel=stylesheet href="style/core.css">
+        <script type="text/javascript" src="power/main.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="innerwrapper">
+            
+        <header class="header global">
+            <div class="headwrap">
+                <h1>Git - What is it, how does it work?</h1>
+            </div>
+        </header>
+        
+       <nav class="nav global">
+            <div class="navwrap">
+                <li><a href="index.html">Installing Git</a></li>
+                <li><a href="set.html">Setting Git up</a></li>
+                <li><a href="nav.html">Navigating</a></li>
+                <li><a href="sta.html">Staging and Pushing</a></li>
+                <li><a href="clo.html">Cloning and pulling</a></li>
+            </div>
+        </nav>
+        
+        <main class="main global">
+            <div class="mainwrap">
+                <div>
+                <h2>Cloning and merging</h2>
+                    <ol>
+                        <li>The only use for this if you have multiple working computers, or if you lost your work. First navigate to where you'd like to do your stuff, then type git clone https://github.com/username/repository.git and it should start downloading your work. You don't need to do this more than once, the command pull does the same thing, instead it only downloads files you currently don't have on your machine.</li>
+                        <li>Sometimes we want to combine work between two branches, this could be if we are done testing a feature or we have multiple authors and we need to combine the work of them. For this we use merge. First git checkout branchname to the branch you want to combine TO, this is where you integrate the new stuff. Then do git merge branchname where branchname is where you'd like to combine FROM, this is usually the newly added feature branch.</li>
+                        <li>After we've merged and checkout'ed, simply do git push. And done! You've now combined the two branches into a slightly larger branch.</li>
+                    </ol>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer global">
+            <div class="footwrap">
+            </div>
+        </footer>
+            
+            </div>
+        </div>
+    </body>
+</html>

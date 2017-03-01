@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <!--<link rel=stylesheet href="style/reset.css">-->
+        <link rel=stylesheet href="style/core.css">
+        <script type="text/javascript" src="power/main.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="innerwrapper">
+            
+        <header class="header global">
+            <div class="headwrap">
+                <h1>Git - What is it, how does it work?</h1>
+            </div>
+        </header>
+        
+         <nav class="nav global">
+            <div class="navwrap">
+                <li><a href="index.html">Installing Git</a></li>
+                <li><a href="set.html">Setting Git up</a></li>
+                <li><a href="nav.html">Navigating</a></li>
+                <li><a href="sta.html">Staging and Pushing</a></li>
+                <li><a href="clo.html">Cloning and Pulling</a></li>
+            </div>
+        </nav>
+        
+        <main class="main global">
+            <div class="mainwrap">
+                <div>
+                <h2>Staging and Commiting</h2>
+                    <ol>
+                        <li>Now that you have a list of stuff git doesn't track, let's make it so that it tracks it. type in git add foldername/filename, this will add the folder/file to a commitlist, you can also simply do git add . this adds all untracked folders and files.</li>
+                        <li>If you type in git status, the previously red text will now appear green. That means git now knows the folders/files exist. Now let's make a commit with a message explaining what we did/changed, type in git commit -m 'Your message here'.</li>
+                        <li>If you haven't already created a repository on github or anyother git server, do that now. You will be given a command to link your git terminal to the git repository when you do this. Type that command in. If you already have a github repository, but no link / command, simply type in git remote add origin 'https://github.com/username/repository.git' where username and repository is your username and repository, the .git is important, don't remove/change that.</li>
+                        <li>If there were no errors doing this, yay! Let's confirm the remote either way, type in git remote -v and it should print 2 lines of text, one with pull and one with push.</li>
+                        <li>Now that we've linked our terminal to our github repository, let's upload our work to the server. type git push and it should begin uploading. You can doublecheck if this worked by checking the repository online. If it did, yay!</li>
+                        <li>If you want to make an addition that isn't part of your "master" branch, you can simply add a new branch by typing git branch branchname I don't think I have to explain it. Now to change to our newly created branch type git checkout branchname this will put us in the new branch, to confirm this we can type git checkout and there should be 2 branches, master and the one we created which should appear green.</li>
+                        <li>Add, Commit and everything you'd normally do, but when doing push, notice that it doesn't initially work, BUT it does give you a very useful command which will solve your problem. This will change your upstream to the current branch instead of the original. Next up cloning and merging.</li>
+                    </ol>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer global">
+            <div class="footwrap">
+            </div>
+        </footer>
+            
+            </div>
+        </div>
+    </body>
+</html>
